@@ -1,0 +1,33 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "prof.shafiei@gmail.com"
+    }
+  },
+  "manifest_version": 2,
+  "name": "Abdal Clean Google Links",
+  "version": "1.1",
+  "author": "Ebrahim Shafiei (EbraSha)",
+  "description": "Removes Google tracking parameters from search result links.",
+  "homepage_url": "https://github.com/ebrasha/abdal-clean-google-links",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.google.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "AbdalCleanGoogleLinks Firefox",
+    "default_popup": "popup/popup.html"
+  }
+}
