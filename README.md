@@ -18,7 +18,8 @@ This extension was created to enhance user privacy and convenience when copying 
 
 ### 🔥 Requirements
 
-- No prerequisites required
+- Firefox Web browser
+
 
 ## ✨ Features
 
