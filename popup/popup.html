@@ -1,15 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdal Clean Google Links</title>
     <style>
         body {
-            width: 200px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .stat {
+            text-align: center;
+            flex: 1;
+        }
+        .stat-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
-<h3>Abdal Clean Google Links</h3>
-<p>Programmer: Ebrahim Shafiei (EbraSha)</p>
+    <div class="container">
+        <div class="header">
+            <h1>Abdal Clean Google Links</h1>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="total-links">-</div>
+                <div>Total Links</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="cleaned-links">-</div>
+                <div>Cleaned Links</div>
+            </div>
+        </div>
+        
+        <button class="btn btn-primary" id="clean-now">Clean Current Page</button>
+        <button class="btn btn-secondary" id="refresh-stats">Refresh Statistics</button>
+        
+        <div class="footer">
+            Version 2.0.0<br>
+            By Ebrahim Shafiei (EbraSha)
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>

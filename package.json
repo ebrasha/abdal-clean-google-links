@@ -1,0 +1,83 @@
+{
+  "name": "abdal-clean-google-links",
+  "version": "2.0.1",
+  "description": "Professional Firefox extension that automatically cleans and simplifies URLs in Google search results, removing tracking parameters for enhanced privacy and efficiency.",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'No build process required for Firefox extension'",
+    "test": "echo 'Manual testing required - load extension in Firefox'",
+    "lint": "echo 'Linting can be done with ESLint if needed'"
+  },
+  "keywords": [
+    "firefox-extension",
+    "privacy",
+    "url-cleaning",
+    "google",
+    "tracking-removal",
+    "browser-extension",
+    "security",
+    "abdal-security"
+  ],
+  "author": {
+    "name": "Ebrahim Shafiei",
+    "alias": "EbraSha",
+    "email": "Prof.Shafiei@Gmail.com",
+    "organization": "Abdal Security Group"
+  },
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebrasha/abdal-clean-google-links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ebrasha/abdal-clean-google-links/issues"
+  },
+  "homepage": "https://github.com/ebrasha/abdal-clean-google-links#readme",
+  "engines": {
+    "firefox": ">=109.0"
+  },
+  "manifest": {
+    "version": 2,
+    "permissions": [
+      "activeTab",
+      "contextMenus",
+      "storage",
+      "webRequest"
+    ],
+    "host_permissions": [
+      "*://*.google.com/*",
+      "*://*.google.co.uk/*",
+      "*://*.google.de/*",
+      "*://*.google.fr/*",
+      "*://*.google.it/*",
+      "*://*.google.es/*",
+      "*://*.google.ca/*",
+      "*://*.google.com.au/*",
+      "*://*.google.co.jp/*",
+      "*://*.google.co.in/*",
+      "*://*.google.com.br/*",
+      "*://*.google.ru/*",
+      "*://*.google.cn/*"
+    ]
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "manifest.json",
+    "background.js",
+    "content.js",
+    "popup/",
+    "icons/",
+    "README.md"
+  ],
+  "contributors": [
+    {
+      "name": "Ebrahim Shafiei",
+      "email": "Prof.Shafiei@Gmail.com"
+    }
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/ebrasha"
+  }
+} 
